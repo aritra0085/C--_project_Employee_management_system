@@ -7,3 +7,81 @@ string id[30], name[30], address[50], dob[30], mobile_no[30], doj[30], marstatus
 
 int total = 0; // to store all data
 void enter()
+
+{
+
+    int ch = 0;
+
+    cout << "How Many Employees' Data Do You Want to Enter?" << endl;
+
+    cin >> ch;
+    if (total == 0)
+
+    {
+
+        total = ch + total;
+
+        for (int i = 0; i < ch; i++)
+
+        {
+
+            cout << "\nEnter the Data of Employee " << i + 1 << endl
+                 << endl;
+            cout << "** PERSONAL DETAILS **" << endl
+                 << endl;
+
+            cout << "Enter Name: " << endl;
+
+            cin >> name[i];
+
+            cout << "Enter Address: " << endl;
+
+            cin >> address[i];
+
+            cout << "Enter Date of Birth: " << endl;
+
+            cin >> dob[i];
+
+            cout << "Is Employee Married?: " << endl;
+
+            cin >> marstatus[i];
+
+            cout << "** WORK DETAILS **" << endl
+                 << endl;
+
+            cout << "Enter Id: " << endl;
+
+            cin >> id[i];
+
+            cout << "Enter Date of Joing: " << endl;
+
+            cin >> doj[i];
+
+            cout << "Work Department: " << endl;
+
+            cin >> workd[i];
+
+            cout << "Enter Work Location: " << endl;
+
+            cin >> workl[i];
+
+            cout << "Enter CTC: " << endl;
+
+            cin >> ctc[i];
+
+            cout << "Enter Social Insurance Id: " << endl;
+
+            cin >> socialins[i];
+
+            cout << "** CONTACT DETAILS **" << endl
+                 << endl;
+
+            cout << "Enter Mobile NO: " << endl;
+
+            cin >> mobile_no[i];
+
+            cout << "Enter Email: " << endl;
+
+            cin >> email[i];
+        }
+    }
