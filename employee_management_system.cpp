@@ -157,4 +157,52 @@ void enter()
         total = ch + total; // making choice
     }
 }
-//for today
+
+void show()
+
+{
+
+    if (total == 0)
+
+    {
+
+        cout << "No Data is Entered" << endl;
+    }
+
+    else
+    {
+
+        for (int i = 0; i < total; i++)
+
+        {
+            cout<<"** RESULT FOR SHOW DATA **"<<endl;
+
+            cout << "\nData of Employee: " << i + 1 << endl
+                 << endl;
+            cout << "** PERSONAL DETAILS **" << endl
+                 << endl;
+
+            cout << "Full Name: " << name[i] << endl;
+            cout << "Address: " << address[i] << endl;
+            cout << "Date of Birth: " << dob[i] << endl;
+            cout << "Maritual Status: " << marstatus[i] << endl
+                 << endl;
+
+            cout << "** WORK DETAILS **" << endl
+                 << endl;
+
+            cout << "Id: " << id[i] << endl;
+            cout << "Date of Joing: " << doj[i] << endl;
+            cout << "Work Department: " << workd[i] << endl;
+            cout << "Work Location: " << workl[i] << endl;
+            cout << "CTC: " << ctc[i] << endl;
+            cout << "Social Insurance: " << socialins[i] << endl
+                 << endl;
+
+            cout << "** CONTACT DETAILS **" << endl
+                 << endl;
+            cout << "Mobile NO: " << mobile_no[i] << endl;
+            cout << "Email Id: " << email[i] << endl;
+        }
+    }
+}
